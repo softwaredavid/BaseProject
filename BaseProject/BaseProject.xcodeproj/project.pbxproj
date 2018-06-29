@@ -20,6 +20,7 @@
 		A36DEB0520E5C0130021439F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB0420E5C0130021439F /* Service.swift */; };
 		A36DEB0720E5C0F00021439F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB0620E5C0F00021439F /* Config.swift */; };
 		A36DEB0920E5C44C0021439F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB0820E5C44C0021439F /* Server.swift */; };
+		A36DEB0D20E5DC2B0021439F /* ParseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB0C20E5DC2B0021439F /* ParseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A36DEB0420E5C0130021439F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A36DEB0620E5C0F00021439F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A36DEB0820E5C44C0021439F /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		A36DEB0C20E5DC2B0021439F /* ParseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseModel.swift; sourceTree = "<group>"; };
 		B113D09AA61043A515C31A2B /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				A36DEB0420E5C0130021439F /* Service.swift */,
 				A36DEB0620E5C0F00021439F /* Config.swift */,
 				A36DEB0820E5C44C0021439F /* Server.swift */,
+				A36DEB0C20E5DC2B0021439F /* ParseModel.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36DEB0920E5C44C0021439F /* Server.swift in Sources */,
+				A36DEB0D20E5DC2B0021439F /* ParseModel.swift in Sources */,
 				A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */,
 				A36DEB0720E5C0F00021439F /* Config.swift in Sources */,
 				A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */,

@@ -15,16 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let provider = MoyaProvider<Service>()
-        provider.request(.login("")) { (result) in
+        provider.rx.request(.login(["":""])).map(ResultModel<String>.self).subscribe { result in
             switch result {
             case .success(let obj):
                 print(obj)
-                break
-            case .failure(let error):
+            case .error(let error):
                 print(error)
-                break
             }
-        }
+        }.dispose()
     }
     
     override func didReceiveMemoryWarning() {

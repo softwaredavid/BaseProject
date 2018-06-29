@@ -8,8 +8,8 @@
 import Moya
 
 enum Service {
-    case login(String)
-    case register(String)
+    case login([String: Any])
+    case register([String: Any])
 }
 
 extension Service: TargetType {
@@ -41,6 +41,11 @@ extension Service: TargetType {
     }
     
     var task: Task {
+        switch self {
+        case .login(let para):
+            return .requestParameters(parameters: para, encoding: URLEncoding.default)
+        case .register(_): break
+        }
         return .requestPlain
     }
     
