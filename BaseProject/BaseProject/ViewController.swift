@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.createColor(colorStr: "#f1f1f1")
+        
         let dic: [String: Any] = ["str":"s"]
         let json = JSON(data: dic)
         let str: String? = json["str"]
