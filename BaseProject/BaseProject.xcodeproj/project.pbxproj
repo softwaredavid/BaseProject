@@ -40,6 +40,7 @@
 		A36DEB3420E5E4CF0021439F /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3320E5E4CE0021439F /* UIFactory.swift */; };
 		A36DEB3620E5E4DA0021439F /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3520E5E4DA0021439F /* NoDataView.swift */; };
 		A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3720E5E51E0021439F /* SDTextView.swift */; };
+		A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3920E5E59F0021439F /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		A36DEB3320E5E4CE0021439F /* UIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 		A36DEB3520E5E4DA0021439F /* NoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		A36DEB3720E5E51E0021439F /* SDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTextView.swift; sourceTree = "<group>"; };
+		A36DEB3920E5E59F0021439F /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		B113D09AA61043A515C31A2B /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -238,6 +240,7 @@
 				A36DEB3720E5E51E0021439F /* SDTextView.swift */,
 				A36DEB3520E5E4DA0021439F /* NoDataView.swift */,
 				A36DEB3320E5E4CE0021439F /* UIFactory.swift */,
+				A36DEB3920E5E59F0021439F /* JSON.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36DEB0920E5C44C0021439F /* Server.swift in Sources */,
+				A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */,
 				A36DEB1720E5E0EA0021439F /* NSString+Extension.swift in Sources */,
 				A36DEB2720E5E2FB0021439F /* UIApplication+Extension.swift in Sources */,
 				A36DEB2D20E5E3170021439F /* BaseNavigationViewController.swift in Sources */,
