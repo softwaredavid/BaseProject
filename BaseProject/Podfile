@@ -6,6 +6,8 @@ target 'BaseProject' do
   use_frameworks!
 
   pod 'Moya/RxSwift', '~> 11.0'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'Kingfisher', '~> 4.8.0'
 
   target 'BaseProjectTests' do
     inherit! :search_paths

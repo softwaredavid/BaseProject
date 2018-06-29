@@ -13,7 +13,7 @@ import UIKit
 import WebKit
 
 
-class WebViewController1: BaseViewController,WKNavigationDelegate {
+class WebViewController: BaseViewController,WKNavigationDelegate {
    
     
     var url: String?

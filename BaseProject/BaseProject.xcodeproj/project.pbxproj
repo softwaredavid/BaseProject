@@ -36,11 +36,12 @@
 		A36DEB2B20E5E3110021439F /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB2A20E5E3110021439F /* BaseTabBarViewController.swift */; };
 		A36DEB2D20E5E3170021439F /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB2C20E5E3160021439F /* BaseNavigationViewController.swift */; };
 		A36DEB2F20E5E31B0021439F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB2E20E5E31B0021439F /* BaseViewController.swift */; };
-		A36DEB3220E5E3F00021439F /* WebViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3120E5E3F00021439F /* WebViewController1.swift */; };
+		A36DEB3220E5E3F00021439F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3120E5E3F00021439F /* WebViewController.swift */; };
 		A36DEB3420E5E4CF0021439F /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3320E5E4CE0021439F /* UIFactory.swift */; };
 		A36DEB3620E5E4DA0021439F /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3520E5E4DA0021439F /* NoDataView.swift */; };
 		A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3720E5E51E0021439F /* SDTextView.swift */; };
 		A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3920E5E59F0021439F /* JSON.swift */; };
+		A36DEB3C20E6050A0021439F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3B20E6050A0021439F /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,11 +101,12 @@
 		A36DEB2A20E5E3110021439F /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		A36DEB2C20E5E3160021439F /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		A36DEB2E20E5E31B0021439F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		A36DEB3120E5E3F00021439F /* WebViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController1.swift; sourceTree = "<group>"; };
+		A36DEB3120E5E3F00021439F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A36DEB3320E5E4CE0021439F /* UIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 		A36DEB3520E5E4DA0021439F /* NoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		A36DEB3720E5E51E0021439F /* SDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTextView.swift; sourceTree = "<group>"; };
 		A36DEB3920E5E59F0021439F /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		A36DEB3B20E6050A0021439F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B113D09AA61043A515C31A2B /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				A36DEB3520E5E4DA0021439F /* NoDataView.swift */,
 				A36DEB3320E5E4CE0021439F /* UIFactory.swift */,
 				A36DEB3920E5E59F0021439F /* JSON.swift */,
+				A36DEB3B20E6050A0021439F /* Message.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -267,7 +270,7 @@
 		A36DEB3020E5E3E70021439F /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				A36DEB3120E5E3F00021439F /* WebViewController1.swift */,
+				A36DEB3120E5E3F00021439F /* WebViewController.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -485,6 +489,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -512,7 +517,7 @@
 				A36DEB1320E5E0150021439F /* UserDefault+Extension.swift in Sources */,
 				A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */,
 				A36DEB1E20E5E2B80021439F /* Dictionary+Extension.swift in Sources */,
-				A36DEB3220E5E3F00021439F /* WebViewController1.swift in Sources */,
+				A36DEB3220E5E3F00021439F /* WebViewController.swift in Sources */,
 				A36DEB2B20E5E3110021439F /* BaseTabBarViewController.swift in Sources */,
 				A36DEB1C20E5E29E0021439F /* UILable+Extension.swift in Sources */,
 				A36DEB1520E5E0C30021439F /* UIColor+Extension.swift in Sources */,
@@ -522,6 +527,7 @@
 				A36DEB2920E5E3030021439F /* UIImageView+Extension.swift in Sources */,
 				A36DEB3420E5E4CF0021439F /* UIFactory.swift in Sources */,
 				A36DEB1120E5DFDF0021439F /* Notification+Extension.swift in Sources */,
+				A36DEB3C20E6050A0021439F /* Message.swift in Sources */,
 				A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */,
 				A36DEB2420E5E2C90021439F /* Navigation+Extension.swift in Sources */,
 				A36DEB0520E5C0130021439F /* Service.swift in Sources */,
