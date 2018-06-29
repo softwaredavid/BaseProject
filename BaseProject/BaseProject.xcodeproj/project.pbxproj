@@ -10,6 +10,7 @@
 		2DCCB955A5E3FCB2E4F1260A /* Pods_BaseProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B019D1CD0603CFAF9412D47 /* Pods_BaseProjectUITests.framework */; };
 		3408708C9C9368D7930A15CA /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */; };
 		6755FF0D8560C022D527A667 /* Pods_BaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33034046C178A61BACEB7106 /* Pods_BaseProjectTests.framework */; };
+		A32343CC20E60D8500D35618 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32343CB20E60D8500D35618 /* AppUtils.swift */; };
 		A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEAD520E5BD3B0021439F /* AppDelegate.swift */; };
 		A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEAD720E5BD3B0021439F /* ViewController.swift */; };
 		A36DEADB20E5BD3B0021439F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36DEAD920E5BD3B0021439F /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		6726DC78E46C7A83F829C9F1 /* Pods-BaseProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectUITests/Pods-BaseProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DB700773A8277B9E3A72E61 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		824FC08B1C4A4F4C4A954AD0 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		A32343CB20E60D8500D35618 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		A36DEAD220E5BD3B0021439F /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36DEAD520E5BD3B0021439F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36DEAD720E5BD3B0021439F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				A36DEB3320E5E4CE0021439F /* UIFactory.swift */,
 				A36DEB3920E5E59F0021439F /* JSON.swift */,
 				A36DEB3B20E6050A0021439F /* Message.swift */,
+				A32343CB20E60D8500D35618 /* AppUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */,
 				A36DEB0720E5C0F00021439F /* Config.swift in Sources */,
 				A36DEB2920E5E3030021439F /* UIImageView+Extension.swift in Sources */,
+				A32343CC20E60D8500D35618 /* AppUtils.swift in Sources */,
 				A36DEB3420E5E4CF0021439F /* UIFactory.swift in Sources */,
 				A36DEB1120E5DFDF0021439F /* Notification+Extension.swift in Sources */,
 				A36DEB3C20E6050A0021439F /* Message.swift in Sources */,
