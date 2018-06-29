@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let dic: [String: Any] = ["str":"s"]
+        let json = JSON(data: dic)
+        let str: String? = json["str"]
+        print(str)
+        
         let provider = MoyaProvider<Service>()
         provider.rx.request(.login(["":""])).map(ResultModel<String>.self).subscribe { result in
             switch result {

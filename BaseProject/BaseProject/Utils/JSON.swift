@@ -7,5 +7,13 @@
 //
 
 struct JSON {
+    private var data: [String: Any]
     
+    init(data: [String: Any]) {
+        self.data = data
+    }
+    
+    subscript<T>(key: String) -> T? {
+        return data[key] as? T
+    }
 }
