@@ -8,13 +8,11 @@
 
 import UIKit
 
-
 public let screen_width = UIScreen.main.bounds.width
 public let screen_height = UIScreen.main.bounds.height
 
 typealias void_func_void = () -> ()
 typealias UITableViewProtocol = UITableViewDataSource & UITableViewDelegate
-
 
 struct Config {
     

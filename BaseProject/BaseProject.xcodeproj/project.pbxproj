@@ -44,6 +44,7 @@
 		A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3720E5E51E0021439F /* SDTextView.swift */; };
 		A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3920E5E59F0021439F /* JSON.swift */; };
 		A36DEB3C20E6050A0021439F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3B20E6050A0021439F /* Message.swift */; };
+		A3F269C320E70E5D00F84930 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F269C220E70E5D00F84930 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		A36DEB3720E5E51E0021439F /* SDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTextView.swift; sourceTree = "<group>"; };
 		A36DEB3920E5E59F0021439F /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		A36DEB3B20E6050A0021439F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A3F269C220E70E5D00F84930 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		B113D09AA61043A515C31A2B /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 		A36DEAD420E5BD3B0021439F /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				A3F269C120E70E3400F84930 /* Example */,
 				A36DEB3020E5E3E70021439F /* WebView */,
 				A36DEB2520E5E2DB0021439F /* Base */,
 				A36DEB1A20E5E21C0021439F /* Config */,
@@ -185,8 +188,6 @@
 				A36DEB0E20E5DF140021439F /* Extension */,
 				A36DEB0320E5BFED0021439F /* NetWork */,
 				A36DEAD520E5BD3B0021439F /* AppDelegate.swift */,
-				A36DEAD720E5BD3B0021439F /* ViewController.swift */,
-				A36DEAD920E5BD3B0021439F /* Main.storyboard */,
 				A36DEADC20E5BD3C0021439F /* Assets.xcassets */,
 				A36DEADE20E5BD3C0021439F /* LaunchScreen.storyboard */,
 				A36DEAE120E5BD3C0021439F /* Info.plist */,
@@ -279,6 +280,16 @@
 				A36DEB3120E5E3F00021439F /* WebViewController.swift */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		A3F269C120E70E3400F84930 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A36DEAD920E5BD3B0021439F /* Main.storyboard */,
+				A36DEAD720E5BD3B0021439F /* ViewController.swift */,
+				A3F269C220E70E5D00F84930 /* TestModel.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		FF947A26C65FBB51664768A4 /* Pods */ = {
@@ -539,6 +550,7 @@
 				A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */,
 				A36DEB2420E5E2C90021439F /* Navigation+Extension.swift in Sources */,
 				A36DEB0520E5C0130021439F /* Service.swift in Sources */,
+				A3F269C320E70E5D00F84930 /* TestModel.swift in Sources */,
 				A36DEB2F20E5E31B0021439F /* BaseViewController.swift in Sources */,
 				A36DEB1920E5E2170021439F /* UIFont.swift in Sources */,
 			);
