@@ -44,6 +44,7 @@
 		A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3720E5E51E0021439F /* SDTextView.swift */; };
 		A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3920E5E59F0021439F /* JSON.swift */; };
 		A36DEB3C20E6050A0021439F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEB3B20E6050A0021439F /* Message.swift */; };
+		A3B4448420F9E03A008B67FC /* ToModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4448320F9E03A008B67FC /* ToModelExtension.swift */; };
 		A3F269C320E70E5D00F84930 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F269C220E70E5D00F84930 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		A36DEB3720E5E51E0021439F /* SDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTextView.swift; sourceTree = "<group>"; };
 		A36DEB3920E5E59F0021439F /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		A36DEB3B20E6050A0021439F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A3B4448320F9E03A008B67FC /* ToModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToModelExtension.swift; sourceTree = "<group>"; };
 		A3F269C220E70E5D00F84930 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		B113D09AA61043A515C31A2B /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +228,7 @@
 		A36DEB0E20E5DF140021439F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A3B4448320F9E03A008B67FC /* ToModelExtension.swift */,
 				A36DEB2820E5E3030021439F /* UIImageView+Extension.swift */,
 				A36DEB2620E5E2FB0021439F /* UIApplication+Extension.swift */,
 				A36DEB2320E5E2C90021439F /* Navigation+Extension.swift */,
@@ -524,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36DEB0920E5C44C0021439F /* Server.swift in Sources */,
+				A3B4448420F9E03A008B67FC /* ToModelExtension.swift in Sources */,
 				A36DEB3A20E5E59F0021439F /* JSON.swift in Sources */,
 				A36DEB1720E5E0EA0021439F /* NSString+Extension.swift in Sources */,
 				A36DEB2720E5E2FB0021439F /* UIApplication+Extension.swift in Sources */,
