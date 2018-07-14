@@ -30,6 +30,15 @@ class ViewController: UIViewController {
                 print(error)
             }
         }.dispose()
+        
+        
+        provider.rx
+            .request(.login(["":""]))
+            .mapModel(ResultModel<String>.self).subscribe( onSuccess: { (model) in
+                let m = model
+            }, onError: { (_) in
+                
+            }).dispose()
     }
 }
 
