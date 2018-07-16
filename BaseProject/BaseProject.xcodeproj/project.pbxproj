@@ -12,6 +12,7 @@
 		6755FF0D8560C022D527A667 /* Pods_BaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33034046C178A61BACEB7106 /* Pods_BaseProjectTests.framework */; };
 		A32343CC20E60D8500D35618 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32343CB20E60D8500D35618 /* AppUtils.swift */; };
 		A32343CE20E6222400D35618 /* SystemAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32343CD20E6222400D35618 /* SystemAlertView.swift */; };
+		A34E7C6220FC34D7007FD4AB /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E7C6120FC34D7007FD4AB /* FileManager.swift */; };
 		A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEAD520E5BD3B0021439F /* AppDelegate.swift */; };
 		A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DEAD720E5BD3B0021439F /* ViewController.swift */; };
 		A36DEADB20E5BD3B0021439F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36DEAD920E5BD3B0021439F /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		824FC08B1C4A4F4C4A954AD0 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A32343CB20E60D8500D35618 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		A32343CD20E6222400D35618 /* SystemAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAlertView.swift; sourceTree = "<group>"; };
+		A34E7C6120FC34D7007FD4AB /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		A36DEAD220E5BD3B0021439F /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36DEAD520E5BD3B0021439F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36DEAD720E5BD3B0021439F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				A36DEAD920E5BD3B0021439F /* Main.storyboard */,
 				A36DEAD720E5BD3B0021439F /* ViewController.swift */,
 				A3F269C220E70E5D00F84930 /* TestModel.swift */,
+				A34E7C6120FC34D7007FD4AB /* FileManager.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				A36DEB2720E5E2FB0021439F /* UIApplication+Extension.swift in Sources */,
 				A36DEB2D20E5E3170021439F /* BaseNavigationViewController.swift in Sources */,
 				A36DEB0D20E5DC2B0021439F /* ParseModel.swift in Sources */,
+				A34E7C6220FC34D7007FD4AB /* FileManager.swift in Sources */,
 				A36DEB2220E5E2C40021439F /* UIView+Extension.swift in Sources */,
 				A36DEB2020E5E2BE0021439F /* Thread+Extension.swift in Sources */,
 				A36DEB1320E5E0150021439F /* UserDefault+Extension.swift in Sources */,

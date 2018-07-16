@@ -8,6 +8,7 @@
 
 import UIKit
 import Moya
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -39,6 +40,24 @@ class ViewController: UIViewController {
             }, onError: { (_) in
                 
             }).dispose()
+    }
+    // config congfig
+    func configAlmofire() -> SessionManager {
+        let headers = Alamofire.SessionManager.default.session.configuration.httpAdditionalHeaders ?? [:]
+
+        let config = URLSessionConfiguration.default
+        config.httpAdditionalHeaders = headers
+        let m = Alamofire.SessionManager(configuration: config)
+        return m
+    }
+    // bakcground download
+    func configBackgroundDownload() -> SessionManager {
+        let headers = Alamofire.SessionManager.default.session.configuration.httpAdditionalHeaders ?? [:]
+        
+        let config = URLSessionConfiguration.background(withIdentifier: "com.app.io")
+        config.httpAdditionalHeaders = headers
+        let m = Alamofire.SessionManager(configuration: config)
+        return m
     }
 }
 
