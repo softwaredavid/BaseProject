@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0499AB092183151F00E89A00 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499AB082183151F00E89A00 /* Delegate.swift */; };
+		04D61D74217DD55E00A7761E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D61D73217DD55E00A7761E /* Observable.swift */; };
 		2DCCB955A5E3FCB2E4F1260A /* Pods_BaseProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B019D1CD0603CFAF9412D47 /* Pods_BaseProjectUITests.framework */; };
 		3408708C9C9368D7930A15CA /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675ACCFD50D5D6E7998484D /* Pods_BaseProject.framework */; };
 		6755FF0D8560C022D527A667 /* Pods_BaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33034046C178A61BACEB7106 /* Pods_BaseProjectTests.framework */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0499AB082183151F00E89A00 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		04D61D73217DD55E00A7761E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1E0E42CAA89431751C3FA6B8 /* Pods-BaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectUITests/Pods-BaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		33034046C178A61BACEB7106 /* Pods_BaseProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B1F0E9A2940CF4A4DBF06 /* Pods-BaseProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 		A36DEB0F20E5DFA00021439F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0499AB082183151F00E89A00 /* Delegate.swift */,
+				04D61D73217DD55E00A7761E /* Observable.swift */,
 				A32343CD20E6222400D35618 /* SystemAlertView.swift */,
 				A36DEB3720E5E51E0021439F /* SDTextView.swift */,
 				A36DEB3520E5E4DA0021439F /* NoDataView.swift */,
@@ -551,9 +557,11 @@
 				A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */,
 				A36DEB0720E5C0F00021439F /* Config.swift in Sources */,
 				A36DEB2920E5E3030021439F /* UIImageView+Extension.swift in Sources */,
+				04D61D74217DD55E00A7761E /* Observable.swift in Sources */,
 				A32343CC20E60D8500D35618 /* AppUtils.swift in Sources */,
 				A36DEB3420E5E4CF0021439F /* UIFactory.swift in Sources */,
 				A36DEB1120E5DFDF0021439F /* Notification+Extension.swift in Sources */,
+				0499AB092183151F00E89A00 /* Delegate.swift in Sources */,
 				A36DEB3C20E6050A0021439F /* Message.swift in Sources */,
 				A36DEAD620E5BD3B0021439F /* AppDelegate.swift in Sources */,
 				A36DEB2420E5E2C90021439F /* Navigation+Extension.swift in Sources */,

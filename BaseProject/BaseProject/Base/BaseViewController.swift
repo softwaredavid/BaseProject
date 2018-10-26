@@ -16,7 +16,11 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.createColor(colorStr: "#f1f1f1")
-        
+        let web = WebViewController()
+        web.textDelegate?.delegate(on: self) {
+            print($0)
+            print($1)
+        }
     }
 }
 

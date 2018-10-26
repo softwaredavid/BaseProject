@@ -14,7 +14,8 @@ import WebKit
 
 
 class WebViewController: BaseViewController,WKNavigationDelegate {
-   
+    
+    var textDelegate: Delegate<String, Void>?
     
     var url: String?
     var titleText: String?
@@ -34,6 +35,8 @@ class WebViewController: BaseViewController,WKNavigationDelegate {
             wkWebView?.load(urlRequest)
         }
         view.addSubview(wkWebView!)
+        
+        textDelegate?.call("hello word")
     }
     
     override func viewWillAppear(_ animated: Bool) {
