@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044ED23B2191755600B185A4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED23A2191755600B185A4 /* Request.swift */; };
+		044ED23F21917FB000B185A4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED23E21917FB000B185A4 /* Date.swift */; };
+		044ED24E21918A2900B185A4 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 044ED24C21918A2900B185A4 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		044ED25221919BA700B185A4 /* ApiMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED25121919BA700B185A4 /* ApiMethod.swift */; };
 		0499AB092183151F00E89A00 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499AB082183151F00E89A00 /* Delegate.swift */; };
 		04D61D74217DD55E00A7761E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D61D73217DD55E00A7761E /* Observable.swift */; };
 		2DCCB955A5E3FCB2E4F1260A /* Pods_BaseProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B019D1CD0603CFAF9412D47 /* Pods_BaseProjectUITests.framework */; };
@@ -69,6 +73,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044ED23A2191755600B185A4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		044ED23E21917FB000B185A4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		044ED2422191849F00B185A4 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		044ED24B21918A2900B185A4 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		044ED24C21918A2900B185A4 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		044ED24D21918A2900B185A4 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		044ED25121919BA700B185A4 /* ApiMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMethod.swift; sourceTree = "<group>"; };
 		0499AB082183151F00E89A00 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		04D61D73217DD55E00A7761E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1E0E42CAA89431751C3FA6B8 /* Pods-BaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectUITests/Pods-BaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +164,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044ED2402191848B00B185A4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				044ED2412191849000B185A4 /* GTMBase64 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		044ED2412191849000B185A4 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				044ED24B21918A2900B185A4 /* GTMBase64.h */,
+				044ED24C21918A2900B185A4 /* GTMBase64.m */,
+				044ED24D21918A2900B185A4 /* GTMDefines.h */,
+				044ED2422191849F00B185A4 /* BaseProject-Bridging-Header.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 		5EF4391A27A1F7FCD9458FC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +218,7 @@
 		A36DEAD420E5BD3B0021439F /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				044ED2402191848B00B185A4 /* lib */,
 				A3F269C120E70E3400F84930 /* Example */,
 				A36DEB3020E5E3E70021439F /* WebView */,
 				A36DEB2520E5E2DB0021439F /* Base */,
@@ -227,6 +258,8 @@
 				A36DEB0420E5C0130021439F /* Service.swift */,
 				A36DEB0820E5C44C0021439F /* Server.swift */,
 				A36DEB0C20E5DC2B0021439F /* ParseModel.swift */,
+				044ED23A2191755600B185A4 /* Request.swift */,
+				044ED25121919BA700B185A4 /* ApiMethod.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -246,6 +279,7 @@
 				A36DEB1420E5E0C30021439F /* UIColor+Extension.swift */,
 				A36DEB1220E5E0150021439F /* UserDefault+Extension.swift */,
 				A36DEB1020E5DFDF0021439F /* Notification+Extension.swift */,
+				044ED23E21917FB000B185A4 /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -389,6 +423,7 @@
 				TargetAttributes = {
 					A36DEAD120E5BD3B0021439F = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 					A36DEAE520E5BD3C0021439F = {
 						CreatedOnToolsVersion = 9.4;
@@ -542,12 +577,14 @@
 				A36DEB2720E5E2FB0021439F /* UIApplication+Extension.swift in Sources */,
 				A36DEB2D20E5E3170021439F /* BaseNavigationViewController.swift in Sources */,
 				A36DEB0D20E5DC2B0021439F /* ParseModel.swift in Sources */,
+				044ED23F21917FB000B185A4 /* Date.swift in Sources */,
 				A34E7C6220FC34D7007FD4AB /* FileManager.swift in Sources */,
 				A36DEB2220E5E2C40021439F /* UIView+Extension.swift in Sources */,
 				A36DEB2020E5E2BE0021439F /* Thread+Extension.swift in Sources */,
 				A36DEB1320E5E0150021439F /* UserDefault+Extension.swift in Sources */,
 				A36DEB3820E5E51E0021439F /* SDTextView.swift in Sources */,
 				A36DEB1E20E5E2B80021439F /* Dictionary+Extension.swift in Sources */,
+				044ED24E21918A2900B185A4 /* GTMBase64.m in Sources */,
 				A32343CE20E6222400D35618 /* SystemAlertView.swift in Sources */,
 				A36DEB3220E5E3F00021439F /* WebViewController.swift in Sources */,
 				A36DEB2B20E5E3110021439F /* BaseTabBarViewController.swift in Sources */,
@@ -556,6 +593,7 @@
 				A36DEB3620E5E4DA0021439F /* NoDataView.swift in Sources */,
 				A36DEAD820E5BD3B0021439F /* ViewController.swift in Sources */,
 				A36DEB0720E5C0F00021439F /* Config.swift in Sources */,
+				044ED25221919BA700B185A4 /* ApiMethod.swift in Sources */,
 				A36DEB2920E5E3030021439F /* UIImageView+Extension.swift in Sources */,
 				04D61D74217DD55E00A7761E /* Observable.swift in Sources */,
 				A32343CC20E60D8500D35618 /* AppUtils.swift in Sources */,
@@ -567,6 +605,7 @@
 				A36DEB2420E5E2C90021439F /* Navigation+Extension.swift in Sources */,
 				A36DEB0520E5C0130021439F /* Service.swift in Sources */,
 				A3F269C320E70E5D00F84930 /* TestModel.swift in Sources */,
+				044ED23B2191755600B185A4 /* Request.swift in Sources */,
 				A36DEB2F20E5E31B0021439F /* BaseViewController.swift in Sources */,
 				A36DEB1920E5E2170021439F /* UIFont.swift in Sources */,
 			);
@@ -742,6 +781,7 @@
 			baseConfigurationReference = 7DB700773A8277B9E3A72E61 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -750,6 +790,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintelai.test.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaseProject/lib/GTMBase64/BaseProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -760,6 +802,7 @@
 			baseConfigurationReference = 824FC08B1C4A4F4C4A954AD0 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -768,6 +811,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintelai.test.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaseProject/lib/GTMBase64/BaseProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

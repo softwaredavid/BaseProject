@@ -8,8 +8,7 @@
 import Moya
 
 enum Service {
-    case login([String: Any])
-    case register([String: Any])
+    case banner([String: Any])
 }
 
 extension Service: TargetType {
@@ -20,19 +19,15 @@ extension Service: TargetType {
     
     var path: String {
         switch self {
-        case .login(let para):
-            return "login/\(para)"
-        case .register(let para):
-            return "register/\(para)"
+        case .banner(_):
+            return ""
         }
     }
     
-    var method: Method {
+    var method: Moya.Method {
         switch self {
-        case .login(_):
+        case .banner(_):
             return .get
-        case .register(_):
-            return .post
         }
     }
     
@@ -42,11 +37,11 @@ extension Service: TargetType {
     
     var task: Task {
         switch self {
-        case .login(let para):
-            return .requestParameters(parameters: para, encoding: URLEncoding.default)
-        case .register(_): break
+        case .banner(let para):
+            var requestPara = Param.getRequestPara(para: para)
+            requestPara.merge(with: ApiMethod.Home.banner())
+            return .requestParameters(parameters: requestPara, encoding: URLEncoding.default)
         }
-        return .requestPlain
     }
     
     var headers: [String : String]? {

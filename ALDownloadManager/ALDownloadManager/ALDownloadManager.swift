@@ -20,7 +20,7 @@ class ALDownloadManager: NSObject {
     fileprivate override init() {
         super.init()
         downloadInfoArray = Array<ALDownloadInfo>()
-        let configuration = URLSessionConfiguration.default
+        let configuration = URLSessionConfiguration.background(withIdentifier: "com.a.b")
         //请求超时
         configuration.timeoutIntervalForRequest = 5
         /** 最大同时下载数 ---- iOS对于同一个IP服务器的并发最大默认为4，OS X为6 */

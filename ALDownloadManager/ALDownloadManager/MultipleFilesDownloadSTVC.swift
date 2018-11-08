@@ -15,12 +15,12 @@ class MultipleFilesDownloadSTVC: UIViewController ,UITableViewDataSource,UITable
     
     let testUrl: String = "http://song.paohaile.com/30854966.mp3"
     
-    var downloadurls = ["http://120.25.226.186:32812/resources/videos/minion_01.mp4",
-                        "http://120.25.226.186:32812/resources/videos/minion_02.mp4",
-                        "http://120.25.226.186:32812/resources/videos/minion_03.mp4",
-                        "http://120.25.226.186:32812/resources/videos/minion_04.mp4",
-                        "http://120.25.226.186:32812/resources/videos/minion_05.mp4",
-                        "http://120.25.226.186:32812/resources/videos/minion_06.mp4"]
+    var downloadurls = ["http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+                        "http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+                        "http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+                        "http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+                        "http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+                        "http://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1920_18MG.mp4"]
     let alTableView: UITableView = {
         let tabv = UITableView(frame: CGRect.zero, style: .plain)
         tabv.rowHeight = 80

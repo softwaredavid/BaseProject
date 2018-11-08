@@ -21,15 +21,15 @@ typealias ALDownloadResponseBlock = (_ response: DefaultDownloadResponse)-> Void
 
 class ALDownloadInfo: NSObject {
     
-    open let downloadurl: String?
+    let downloadurl: String?
     /**  下载请求  */
     var downloadRequest: DownloadRequest?
     /**  取消下载时的数据  */
     var cancelledData: Data?
     /**  下载管理者  */
-    open let manager: SessionManager?
+    let manager: SessionManager?
     /**  文件下载路径  */
-    open let destinationPath: String?
+    let destinationPath: String?
     /**  下载状态改变时调用  */
     var stateChangeBlock: ALDownloadStateBlock?
     /**  返回下载进度  */

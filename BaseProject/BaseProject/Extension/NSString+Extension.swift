@@ -67,5 +67,19 @@ extension String {
         if self.count != 11 { return false }
         return true
     }
+    // base64编码
+    public func base64EncodeStr() -> String {
+        let customEnc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
+        let utf8Data = self.data(using: String.Encoding(rawValue: customEnc))
+        let base64 = utf8Data?.base64EncodedString()
+        return base64 ?? ""
+    }
+    // base64解码
+    public func base64DecodeStr() -> Data? {
+        let customEnc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
+        let utf8Data = self.data(using: String.Encoding(rawValue: customEnc))
+        let resultStr = String(data: GTMBase64.decode(utf8Data), encoding: String.Encoding(rawValue: customEnc))
+        return resultStr?.data(using: .utf8)
+    }
 }
 

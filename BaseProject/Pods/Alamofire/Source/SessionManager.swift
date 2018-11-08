@@ -121,7 +121,7 @@ open class SessionManager {
     open static let multipartFormDataEncodingMemoryThreshold: UInt64 = 10_000_000
 
     /// The underlying session.
-    open let session: URLSession
+    public let session: URLSession
 
     /// The session delegate handling all the task and session delegate callbacks.
     open let delegate: SessionDelegate

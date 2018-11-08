@@ -13,10 +13,16 @@ import Moya
 extension Response {
     func mapModel<T: Codable>(_ type: T.Type) throws -> T {
         do {
-            return try JSONDecoder().decode(type, from: data)
+            
+            return try JSONDecoder().decode(type, from: handleData(data: data) ?? Data())
         } catch {
             throw MoyaError.jsonMapping(self)
         }
+    }
+    
+    private func handleData(data: Data) -> Data? {
+        let str = String(data: data, encoding: .utf8)
+        return str?.base64DecodeStr()
     }
 }
 

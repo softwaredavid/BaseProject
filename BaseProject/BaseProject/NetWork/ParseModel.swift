@@ -15,8 +15,8 @@ struct ResultModel<T: Codable>: Codable {
     var data: T?
     
     enum CodingKeys: String, CodingKey {
-        case code = "Code"
-        case msg = "Msg"
+        case code = "errCode"
+        case msg = "Message"
         case data = "Data"
     }
     init(from decoder: Decoder) throws {

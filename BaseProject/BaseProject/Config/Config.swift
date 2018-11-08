@@ -16,19 +16,29 @@ typealias UITableViewProtocol = UITableViewDataSource & UITableViewDelegate
 
 struct Config {
     
-    struct Jpush {
+    struct App {
+        static let appId = "4"
+        static let userGroupId = "3"
+    }
+    
+    struct UM {
         static let jpushKey = "837f32ad3a0d74aa89812b47"
     }
     
     var server: Server {
-        return .developer
+        return .distribute
     }
     
+    // 本地服务器 端口 用来播放本地m3u8h视频使用
+    static let localServerPort = "10002"
+    
+}
+
+extension Config {
     enum Color: String {
         case main = "#666666"
         case title = "#888888"
         case subTitle
         case bgColor
     }
-    
 }
